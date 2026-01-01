@@ -5,21 +5,21 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage[
-  left= 0.75 cm,
-  right= 0.75 cm,
-  top= 0.5 cm,
-  bottom= 0.5 cm
+  left= 1 cm,
+  right= 1 cm,
+  top= 1 cm,
+  bottom= 1 cm
 ]{geometry}
 
 \usepackage{graphicx}
 
-\title{Fórmulas de Física - Resumen Final}
-\author{Camila Nanini}
+% \title{Fórmulas de Física - Resumen Final}
+% \author{Camila Nanini}
 
 
 \begin{document}
 
-\maketitle
+% \maketitle
 
 \section{Trigonometría y Vectores}
 
@@ -267,21 +267,29 @@ o sea la carga de prueba q0 se desplaza en el campo generado por q.
 
 \section{Magnetismo}
 \begin{itemize}
-    \item La fuerza que actúa sobre una carga \(q\) que se mueve con velocidad \(\vec{v}\) en un campo magnético \(\vec{B}\) está dada por la expresión: $\vec{F} = q\,\vec{v} \times \vec{B}$
-    \item theta es el ángulo entre v y B. Por esta expresión puede que F sea igual a cero cuando v es paralela o antiparalela a B (0 o 180°) y es máxima cuando v es perpendicular a B (90°). $F = |q| v B \sen \theta$
-    \item Cuando una partícula cargada se mueve en una región donde existen campos eléctrico \(\vec{E}\) y magnético \(\vec{B}\), la fuerza total que experimenta está dada por: $\vec{F} = q\left(\vec{E} + \vec{v} \times \vec{B}\right)$
-    \item El flujo magnético a través de una superficie se define como: $\Phi_B = \int B_\perp\, dA = \int B \cos\phi\, dA = \int \vec{B}\cdot d\vec{A}$. El flujo magnético total a través de una superficie cerrada siempre es igual a cero. 
-    \item La aceleración centrípeta es \(a_c = \dfrac{v^2}{R}\) y la única fuerza que actúa es la fuerza magnética. De acuerdo con la segunda ley de Newton: $|\vec{F}| = |q|\,vB = m\,\frac{v^2}{R}$
-    \item (\textit{Radio de una órbita circular en un campo magnético}) El radio de la trayectoria es: $R = \frac{m v}{|q| B}$
-    \item La rapidez angular \(\omega\) de la partícula se obtiene a partir de la relación: $\omega = \frac{v}{R}$
-    \item (\textit{Frecuencia del ciclotrón}) La frecuencia de la partícula es: $f = \frac{\omega}{2\pi}$
+    \item Fuerza sobre una carga \(q\) con velocidad \(\vec{v}\) en un campo magnético \(\vec{B}\) es: $\vec{F} = q\,\vec{v} \times \vec{B}$
+    \item Theta es el ángulo entre v y B. Entonces F = 0 cuando v es paralela/antiparalela a B (0 o 180°) y es máxima cuando v es perpendicular a B (90°). $F = |q| v B \sen \theta$
+    \item Si la partícula se mueve en una región donde hay campos eléctrico y magnético: $\vec{F} = q\left(\vec{E} + \vec{v} \times \vec{B}\right)$
+    \item Flujo mag. a través de una sup.: $\Phi_B = \int B_\perp\, dA = \int B \cos\phi\, dA = \int \vec{B}\cdot d\vec{A}$. Si la sup. es cerrada = 0. 
+    \item Ac. centrípeta: \(a_c = \dfrac{v^2}{R}\) y la única fuerza que actúa es la magnética. Por Newton: $|\vec{F}| = |q|\,vB = m\,\frac{v^2}{R}$
+    \item Radio de una órbita circular en un campo magnético : $R = \frac{m v}{|q| B}$. La rapidez angular \(\omega\) es: $\omega = \frac{v}{R}$ y la Frecuencia del ciclotrón es: $f = \frac{\omega}{2\pi}$
     \item La magnitud del par de torsión que actúa sobre una espira de corriente en un campo magnético es: $\tau = I B A \sin\phi$
     y en forma vectorial: $\vec{\tau} = \vec{\mu} \times \vec{B}$
-    \item \textit{momento dipolar magnético} o \textit{momento magnético} de la espira: $\vec{\mu} = I\,\vec{A}$ . Con N espiras de la misma área $\vec{\mu}_{bobina} = N I\,\vec{A}$
+    \item Momento magnético de la espira: $\vec{\mu} = I\,\vec{A}$ . Con N espiras de la misma área $\vec{\mu}_{bobina} = N I\,\vec{A}$
     \item La energía potencial de un dipolo magnético en un campo magnético está dada por: $U = -\vec{\mu}\cdot\vec{B} = -\mu B\cos\phi$
-    \item
-
-
+    \item (\textit{Ley de Biot--Savart}) El campo magnético diferencial \(d\vec{B}\) generado por un elemento de corriente \(I\,d\vec{l}\) en un punto del espacio está dado por:
+    \[ d\vec{B} = \frac{\mu_0}{4\pi}\,\frac{I\,d\vec{l} \times \hat{r}}{r^2}\]
+    donde \(\hat{r}\) es el vector unitario que apunta desde el elemento de corriente hasta el punto de observación y \(r\) es la distancia entre ellos y la permeabilidad del espacio libre es $\mu_0 = 4\pi \times 10^{-7}\ \text{T·m/A}$
+    \item La magnitud de la fuerza magnética entre dos alambres paralelos:
+    $\frac{F_B}{\ell} = \frac{\mu_0 I_1 I_2}{2\pi a}$ donde \(I_1\) e \(I_2\) son las corrientes en los alambres y \(a\) es la distancia entre ellos.
+    \item (\textit{Ley de Ampère}) La integral de línea del campo magnético \(\vec{B}\) a lo largo de cualquier trayectoria cerrada es igual a \(\mu_0\) por la corriente total encerrada: $\oint \vec{B}\cdot d\vec{s} = \mu_0 I$
+    \item Campo magnético de un toroide: $B = \frac{\mu_0 N I}{2\pi r}$ y un solenoide : $B = \mu_0 n I$ donde \(n = \dfrac{N}{\ell}\) es el número de vueltas por unidad de longitud.
+    \item (\textit{Ley de inducción de Faraday}) $\mathcal{E} = -\frac{d\Phi_B}{dt}$
+    \item (\textit{FEM de mov.}) Cuando un conductor de longitud \(l\) se mueve con velocidad \(\vec{v}\) en un campo magnético \(\vec{B}\), la fuerza electromotriz inducida es:
+    $\mathcal{E} = B\,l\,v$ (caso de mov. perpendicular al campo magnético).
+    \item La corriente inducida en un circuito de resistencia \(R\): $I = \frac{\mathcal{E}}{R}$
+    \item La potencia disipada/entregada por una resistencia \(R\) debido a la corriente inducida es:
+    $P = I^2 R = \frac{\mathcal{E}^2}{R}$
 \end{itemize}
 
 
@@ -330,5 +338,27 @@ o sea la carga de prueba q0 se desplaza en el campo generado por q.
     $ \Delta U = Q - W $
     
 \end{itemize}
+
+\section{Unidades}
+\begin{itemize}
+\item Velocidad: \(\mathrm{m/s}\)
+\item Aceleración: \(\mathrm{m/s^2}\)
+\item Newton: \(\mathrm{N} = 1\,\mathrm{kg}\cdot\mathrm{m/s^2}\)
+\item Joule: \(\mathrm{J} = 1\,\mathrm{N}\cdot\mathrm{m}\)
+\item Wats:\(\mathrm{W} = 1\,\mathrm{J/s}\)
+\item Volt: \(1\,\mathrm{V} = 1\,\mathrm{J/C}\)
+\item Faradio: \(1\,\mathrm{F} = 1\,\mathrm{C^2/(N\,m)}\)
+\item Ampere: \(1\,\mathrm{A} = 1\,\mathrm{C/s}\)
+\item Ohm: \(1\,\Omega = 1\,\mathrm{V/A}\)
+\item Tesla: 
+\[
+1\,\mathrm{T} = \frac{\mathrm{V\,s}}{\mathrm{m^2}} 
+= \frac{\mathrm{J}}{\mathrm{A\,m^2}} 
+= \frac{\mathrm{N\,s}}{\mathrm{C\,m}} 
+= \frac{\mathrm{kg}}{\mathrm{C\,s}} 
+= \frac{\mathrm{N}}{\mathrm{A\,m}}
+\]
+\end{itemize}
+
 
 \end{document}
