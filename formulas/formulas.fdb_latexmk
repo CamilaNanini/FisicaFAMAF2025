@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1767303211.43936 "c:/Users/Usuario/Downloads/Fisica/formulas/formulas.tex" "formulas.pdf" "formulas" 1767303212.4823 0
-  "C:/Users/Usuario/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1762821897.66314 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
+["pdflatex"] 1767304913.84434 "c:/Users/Usuario/Downloads/Fisica/formulas/formulas.tex" "formulas.pdf" "formulas" 1767304914.99194 0
+  "C:/Users/Usuario/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1767304247.04825 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/Usuario/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1762617039.51994 14064 67ddf0c3ad3543393d595fe214518579 ""
   "C:/Users/Usuario/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1760054479.09723 24225990 89eff90458c9455f79707988598bff80 ""
   "C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/tcrm0600.tfm" 993062506 1456 d21918d95ca20f07aa266303b9a0a14c ""
@@ -55,10 +55,11 @@
   "C:/Users/Usuario/AppData/Local/Programs/MiKTeX/tex/latex/amsmath/amstext.sty" 1686931788 2444 0d0c1ee65478277e8015d65b86983da2 ""
   "C:/Users/Usuario/AppData/Local/Programs/MiKTeX/tex/latex/arabi/bblopts.cfg" 1705750854 902 74ca68fb2e6c2b8d370ff0e672de0f31 ""
   "C:/Users/Usuario/AppData/Local/Programs/MiKTeX/tex/latex/babel-spanish/spanish.ldf" 1622279580 26965 3b6d1655ad716f98e788b1fb9f2e87b8 ""
-  "C:/Users/Usuario/AppData/Local/Programs/MiKTeX/tex/latex/base/article.cls" 1705273579 20144 147463a6a579f4597269ef9565205cfe ""
+  "C:/Users/Usuario/AppData/Local/Programs/MiKTeX/tex/latex/base/exscale.sty" 1705273578 2581 8e0df574a0fdf7d67e300be743ad323e ""
   "C:/Users/Usuario/AppData/Local/Programs/MiKTeX/tex/latex/base/inputenc.sty" 1705273578 5048 425739d70251273bf93e3d51f3c40048 ""
   "C:/Users/Usuario/AppData/Local/Programs/MiKTeX/tex/latex/base/size12.clo" 1705273578 8449 f07039d8e4e89f21078d9b5137579bfc ""
   "C:/Users/Usuario/AppData/Local/Programs/MiKTeX/tex/latex/epstopdf-pkg/epstopdf-base.sty" 1623003186 13886 d1306dcf79a944f6988e688c1785f9ce ""
+  "C:/Users/Usuario/AppData/Local/Programs/MiKTeX/tex/latex/extsizes/extarticle.cls" 947706120 20602 3112294ba237d94ce4a1502cfef3594f ""
   "C:/Users/Usuario/AppData/Local/Programs/MiKTeX/tex/latex/geometry/geometry.cfg" 1578053545 1104 d237cad3f14be9fd91fe1f904d051a01 ""
   "C:/Users/Usuario/AppData/Local/Programs/MiKTeX/tex/latex/geometry/geometry.sty" 1578053545 42759 e63af52ccddba7489ac0e17d6a3344bd ""
   "C:/Users/Usuario/AppData/Local/Programs/MiKTeX/tex/latex/graphics-cfg/graphics.cfg" 1465894292 1224 978390e9c2234eab29404bc21b268d1e ""
@@ -69,8 +70,8 @@
   "C:/Users/Usuario/AppData/Local/Programs/MiKTeX/tex/latex/graphics/trig.sty" 1665067579 4023 293ea1c16429fc0c4cf605f4da1791a9 ""
   "C:/Users/Usuario/AppData/Local/Programs/MiKTeX/tex/latex/l3backend/l3backend-pdftex.def" 1704400941 30006 57b07afb710ee2f649c65cfbafda39c1 ""
   "Trigonometria.png" 1766866822.62178 19598 3738d7567a26f42c67bdaf8e82dc6558 ""
-  "c:/Users/Usuario/Downloads/Fisica/formulas/formulas.tex" 1767303210.40883 20196 f1902d21e3ac6b3f494aab14aadfc4f1 ""
-  "formulas.aux" 1767303212.24575 1278 45b8c0110bed99f07f8f128b70bc4d57 "pdflatex"
+  "c:/Users/Usuario/Downloads/Fisica/formulas/formulas.tex" 1767304911.56245 20087 ac89d413f39f860d64185b6f1d7d027f ""
+  "formulas.aux" 1767304914.74842 1278 ad22801391ca72ca8bf113d777e7188e "pdflatex"
   (generated)
   "formulas.aux"
   "formulas.log"

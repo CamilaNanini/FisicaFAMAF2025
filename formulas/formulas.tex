@@ -1,4 +1,4 @@
-\documentclass[12pt, a4paper]{article}
+\documentclass[12pt,a4paper]{extarticle}
 \usepackage[utf8]{inputenc}
 \usepackage[spanish]{babel}
 \usepackage{amsmath}
@@ -8,7 +8,7 @@
   left= 1 cm,
   right= 1 cm,
   top= 1 cm,
-  bottom= 1 cm
+  bottom= 2 cm
 ]{geometry}
 
 \usepackage{graphicx}
@@ -49,9 +49,9 @@
     $a = \text{constante} \implies v(t) = v_0 + a \cdot t \implies x(t) = x_0 + v_0 t + \frac{1}{2} a t^2$
     \item \textbf{Movimiento Circular:}
     \begin{itemize}
-        \item Período ($T$): Tiempo por vuelta. $T = \frac{2\pi R}{v}$
+        \item Período ($T$): Tiempo por vuelta. $T = (2\pi R) / v$
         \item Frecuencia ($f$): $f = 1/T$ (Hertz, Hz).
-        \item Aceleración centrípeta: $a_c = \frac{v^2}{r} = \omega^2 r$
+        \item Aceleración centrípeta: $a_c = v^2 / r = \omega^2 r$
     \end{itemize}
 \end{itemize}
 
@@ -68,8 +68,7 @@
     $F_{re} \le \mu_e N \quad \text{y} \quad F_{rd} = \mu_d N$
     \item \textbf{Ley de Hooke (Resortes):} $\vec{F} = -k \Delta x$
     \begin{itemize}
-        \item Paralelo: $k_e = k_1 + k_2 + \dots$
-        \item Serie: $\frac{1}{k_e} = \frac{1}{k_1} + \frac{1}{k_2} + \dots$
+        \item Paralelo: $k_e = k_1 + k_2 + \dots$ y en serie: $\frac{1}{k_e} = \frac{1}{k_1} + \frac{1}{k_2} + \dots$
     \end{itemize}
 \end{itemize}
 
@@ -77,12 +76,12 @@
 
 \begin{itemize}
     \item \textbf{Trabajo ($W$):} $W = F \Delta r \cos(\theta)$
-    \item \textbf{Energía Cinética ($K$):} $K = \frac{1}{2} m v^2$
+    \item \textbf{Energía Cinética ($K$):} $K = (m v^2) / 2$
     \item \textbf{Teorema Trabajo-Energía Cinética:} $W_{tot} = \Delta K = K_f - K_i$
     \item \textbf{Fuerzas Conservativas:} $W_c = -\Delta U = U_i - U_f$
     \begin{itemize}
         \item Energía Potencial Gravitatoria: $U_g = m \cdot g \cdot h$
-        \item Energía Potencial Elástica: $U_e = \frac{1}{2} k \Delta x^2$
+        \item Energía Potencial Elástica: $U_e = (k \Delta x^2) / 2$
     \end{itemize}
     \item \textbf{Energía Mecánica ($E$):} $E = K + U$
     \begin{itemize}
@@ -95,31 +94,31 @@
 
 \begin{itemize}
     \item \textbf{Momento Lineal o Cantidad de Movimiento Lineal:} $\vec{P} = m\vec{v}$.
-    \item \textbf{Nueva versión de la 2da Ley de Newton:} $\sum \vec{F} = \frac{d\vec{P}}{dt}$.
-    \item \textbf{Teorema Impulso-Cantidad de Movimiento:} $\Delta \vec{P} = \int_{t_i}^{t_f} \vec{F} dt \equiv \vec{I}$.
+    \item \textbf{Nueva versión de la 2da Ley de Newton:} $\sum \vec{F} = ( d\vec{P}) / dt$.
+    \item \textbf{Teorema Impulso-Cantidad de Movimiento:} $$\Delta \vec{P} = \int_{t_i}^{t_f} \vec{F} dt \equiv \vec{I}$$.
     \item Sistema aislado : se conserva P. El mismo antes y despues del choque.
     
     \item \textbf{Choque Inelástico (Plástico):}
     \begin{itemize}
         \item Después del choque las partes quedan unidas en un solo cuerpo y $K_f < K_i$ (Ej:plastilina contra caja)
-        \item \textbf{Energía inicial del choque plástico:} $K_i = \frac{1}{2} m_1 v_{1i}^2 + \frac{1}{2} m_2 v_{2i}^2$.
+        \item \textbf{Energía inicial del choque plástico:} $$K_i = \frac{1}{2} m_1 v_{1i}^2 + \frac{1}{2} m_2 v_{2i}^2$$.
         \item \textbf{Coeficiente de Restitución ($e$):} $e = \frac{v_{2f} - v_{1f}}{v_{1i} - v_{2i}}$, en general ($e < 1$) pero si es totalmente Inelástico ($e = 0$)
         \item \textbf{Velocidad final masa 1:} 
-        $ v_{1f} = \frac{m_1 v_{1i} + m_2 v_{2i} - m_2 e (v_{1,i} - v_{2i})}{m_1 + m_2}$
+        $$ v_{1f} = \frac{m_1 v_{1i} + m_2 v_{2i} - m_2 e (v_{1,i} - v_{2i})}{m_1 + m_2}$$
         \item \textbf{Velocidad final masa 2:}
-        $ v_{2f} = \frac{m_1 v_{1i} + m_2 v_{2i} + m_1 e (v_{1i} - v_{2i})}{m_1 + m_2}$ 
+        $$ v_{2f} = \frac{m_1 v_{1i} + m_2 v_{2i} + m_1 e (v_{1i} - v_{2i})}{m_1 + m_2}$$
     \end{itemize}
 
     \item \textbf{Choque Elástico ($e = 1$):}
     \begin{itemize}
         \item Si la fuerza entre las partes del sistema son conservativas entonces se conserva la E. mecanica(Ej:bolas de billar) 
-        \item \textbf{Energía Cinética Inicial ($K_i$):} $K_{i}=\frac{1}{2}m_{1}v_{1i}^{2}+\frac{1}{2}m_{2}v_{2i}^{2}$.
-        \item \textbf{Energía Cinética Final ($K_f$):} $K_{f}=\frac{1}{2}m_{1}v_{1f}^{2}+\frac{1}{2}m_{2}v_{2f}^{2}$.
+        \item \textbf{Energía Cinética Inicial ($K_i$):} $$K_{i}=\frac{1}{2}m_{1}v_{1i}^{2}+\frac{1}{2}m_{2}v_{2i}^{2}$$.
+        \item \textbf{Energía Cinética Final ($K_f$):} $$K_{f}=\frac{1}{2}m_{1}v_{1f}^{2}+\frac{1}{2}m_{2}v_{2f}^{2}$$.
         \item \textbf{Relación de Velocidades:} $v_{1i} - v_{2i} = -(v_{1f} - v_{2f})$.
         \item \textbf{Velocidad final masa 1 ($v_{1f}$):} 
-        $v_{1f} = \frac{(m_{1}-m_{2})v_{1i} + 2m_{2}v_{2i}}{m_{1} + m_2}$ 
+        $$v_{1f} = \frac{(m_{1}-m_{2})v_{1i} + 2m_{2}v_{2i}}{m_{1} + m_2}$$
         \item \textbf{Velocidad final masa 2 ($v_{2f}$):} 
-        $v_{2f} = \frac{2m_{1}v_{1i} + (m_{2}-m_{1})v_{2i}}{m_{1} + m_2}$ 
+        $$v_{2f} = \frac{2m_{1}v_{1i} + (m_{2}-m_{1})v_{2i}}{m_{1} + m_2}$$ 
     \end{itemize}
 \end{itemize}
 
@@ -132,8 +131,7 @@
     \]
     (fuerza eléctrica ejercida por \(q_1\) sobre \(q_2\), donde \(\hat{r}_{12}\) es un vector unitario dirigido desde \(q_1\) hacia \(q_2\)).
     \begin{itemize}
-        \item \(k_e = \dfrac{1}{4\pi\varepsilon_0} \approx 8{,}99 \times 10^9 \, \text{N}\cdot\text{m}^2/\text{C}^2\)
-        \item \(\varepsilon_0 \approx 8{,}85 \times 10^{-12} \, \text{C}^2/(\text{N}\cdot\text{m}^2)\)
+        \item \(k_e = \dfrac{1}{4\pi\varepsilon_0} \approx 8{,}99 \times 10^9 \, \text{N}\cdot\text{m}^2/\text{C}^2\) y \(\varepsilon_0 \approx 8{,}85 \times 10^{-12} \, \text{C}^2/(\text{N}\cdot\text{m}^2)\)
     \end{itemize}
 
     \item \textbf{Principio de superposición de la fuerza electrostática:}
@@ -147,12 +145,11 @@
     \[
     \vec{E} = k_e \frac{q}{r^2}\,\hat{r}
     \]
-    (campo eléctrico generado por una carga \(q\), donde \(\hat{r}\) apunta desde la carga hacia el punto donde se evalúa el campo).
+    (campo eléc. gen. x una carga \(q\), donde \(\hat{r}\) apunta desde la carga a el punto donde se evalúa el campo).
 
     \item \textbf{Relación entre fuerza y campo eléctrico:}
-    \[
-    \vec{F} = q\,\vec{E}
-    \]
+    $\vec{F} = q\,\vec{E}$
+
 
     \item \textbf{Distribución continua de carga:}
     \[
@@ -233,23 +230,23 @@ o sea la carga de prueba q0 se desplaza en el campo generado por q.
 
 \section{Capacitancia y Corriente Eléctrica}
 \begin{itemize}
-    \item \textbf{Capacitancia ($C$):} $C = \frac{Q}{\Delta V}$
-    \item \textbf{Capacitancia de un capacitor de placas paralelas:} $C = \epsilon_0 \frac{A}{d}$
+    \item \textbf{Capacitancia ($C$):} $C = Q / \Delta V$
+    \item \textbf{Capacitancia de un capacitor de placas paralelas:} $C = \epsilon_0 A / d$
     \item \textbf{Capacitancia de un capacitor lleno de un material con constante dieléctrica $\kappa$:} 
-    $C = \frac{Q_0}{\Delta V} = \kappa \frac{Q_0}{\Delta V_0} $
-    \item \textbf{Energía almacenada en un capacitor:} $U = \frac{1}{2} C V^2$
+    $C = Q_0 / \Delta V = \kappa Q_0 / \Delta V_0 $
+    \item \textbf{Energía almacenada en un capacitor:} $U = (C V^2) / 2$
     \item \textbf{Asociación de capacitores:}
     \begin{itemize}
         \item Serie: $\frac{1}{C_{eq}} = \frac{1}{C_1} + \frac{1}{C_2} + \dots$ las diferencias de potencial se suman.
         \item Paralelo: $C_{eq} = C_1 + C_2 + \dots$ los capacitores tienen el mismo potencial V.
     \end{itemize}
-    \item \textbf{Resistencia ($R$):} $R = \frac{\Delta V}{I}$ , Ley de Ohm: $\Delta V = IR$
+    \item \textbf{Resistencia ($R$):} $R = \Delta V / I$ , Ley de Ohm: $\Delta V = IR$
     \item \textbf{Asociación de resistencias:}
     \begin{itemize}
         \item Serie: $R_{eq} = R_1 + R_2 + \dots$ la diferencia de potencial se suma.
         \item Paralelo: $\frac{1}{R_{eq}} = \frac{1}{R_1} + \frac{1}{R_2} + \dots$ la diferencia de potencial es la misma en cada resistencia.
     \end{itemize}
-    \item La potencia disipada en un resistor: $P = I^2 R = \frac{\Delta V^2}{R}$
+    \item La potencia disipada en un resistor: $P = I^2 R = \Delta V^2 / R$
     \item \textbf{Leyes de Kirchhoff:}
     \begin{itemize}
         \item Ley de nudos:En cualquier nodo $\sum I_{in} = \sum I_{out}$
@@ -272,7 +269,9 @@ o sea la carga de prueba q0 se desplaza en el campo generado por q.
     \item Si la partícula se mueve en una región donde hay campos eléctrico y magnético: $\vec{F} = q\left(\vec{E} + \vec{v} \times \vec{B}\right)$
     \item Flujo mag. a través de una sup.: $\Phi_B = \int B_\perp\, dA = \int B \cos\phi\, dA = \int \vec{B}\cdot d\vec{A}$. Si la sup. es cerrada = 0. 
     \item Ac. centrípeta: \(a_c = \dfrac{v^2}{R}\) y la única fuerza que actúa es la magnética. Por Newton: $|\vec{F}| = |q|\,vB = m\,\frac{v^2}{R}$
-    \item Radio de una órbita circular en un campo magnético : $R = \frac{m v}{|q| B}$. La rapidez angular \(\omega\) es: $\omega = \frac{v}{R}$ y la Frecuencia del ciclotrón es: $f = \frac{\omega}{2\pi}$
+    \item Radio de una órbita circular en un campo magnético : $R = (m v) / (|q| B)$. 
+    \item Rapidez angular: $\omega = v / R$ 
+    \item Frecuencia del ciclotrón es: $f = \omega/ (2\pi)$
     \item La magnitud del par de torsión que actúa sobre una espira de corriente en un campo magnético es: $\tau = I B A \sin\phi$
     y en forma vectorial: $\vec{\tau} = \vec{\mu} \times \vec{B}$
     \item Momento magnético de la espira: $\vec{\mu} = I\,\vec{A}$ . Con N espiras de la misma área $\vec{\mu}_{bobina} = N I\,\vec{A}$
@@ -281,17 +280,16 @@ o sea la carga de prueba q0 se desplaza en el campo generado por q.
     \[ d\vec{B} = \frac{\mu_0}{4\pi}\,\frac{I\,d\vec{l} \times \hat{r}}{r^2}\]
     donde \(\hat{r}\) es el vector unitario que apunta desde el elemento de corriente hasta el punto de observación y \(r\) es la distancia entre ellos y la permeabilidad del espacio libre es $\mu_0 = 4\pi \times 10^{-7}\ \text{T·m/A}$
     \item La magnitud de la fuerza magnética entre dos alambres paralelos:
-    $\frac{F_B}{\ell} = \frac{\mu_0 I_1 I_2}{2\pi a}$ donde \(I_1\) e \(I_2\) son las corrientes en los alambres y \(a\) es la distancia entre ellos.
+    $$\frac{F_B}{\ell} = \frac{\mu_0 I_1 I_2}{2\pi a}$$ (\(I_1\),\(I_2\) corrientes en los alambres y \(a\) es la distancia entre ellos).
     \item (\textit{Ley de Ampère}) La integral de línea del campo magnético \(\vec{B}\) a lo largo de cualquier trayectoria cerrada es igual a \(\mu_0\) por la corriente total encerrada: $\oint \vec{B}\cdot d\vec{s} = \mu_0 I$
-    \item Campo magnético de un toroide: $B = \frac{\mu_0 N I}{2\pi r}$ y un solenoide : $B = \mu_0 n I$ donde \(n = \dfrac{N}{\ell}\) es el número de vueltas por unidad de longitud.
-    \item (\textit{Ley de inducción de Faraday}) $\mathcal{E} = -\frac{d\Phi_B}{dt}$
+    \item Campo magnético de un toroide: $$B = \frac{\mu_0 N I}{2\pi r}$$ y un solenoide : $B = \mu_0 n I$ donde \(n = \dfrac{N}{\ell}\) es el número de vueltas por unidad de longitud.
+    \item (\textit{Ley de inducción de Faraday}) $$\mathcal{E} = -\frac{d\Phi_B}{dt}$$
     \item (\textit{FEM de mov.}) Cuando un conductor de longitud \(l\) se mueve con velocidad \(\vec{v}\) en un campo magnético \(\vec{B}\), la fuerza electromotriz inducida es:
     $\mathcal{E} = B\,l\,v$ (caso de mov. perpendicular al campo magnético).
     \item La corriente inducida en un circuito de resistencia \(R\): $I = \frac{\mathcal{E}}{R}$
     \item La potencia disipada/entregada por una resistencia \(R\) debido a la corriente inducida es:
     $P = I^2 R = \frac{\mathcal{E}^2}{R}$
 \end{itemize}
-
 
 \section{Termodinámica}
 \begin{itemize}
@@ -326,14 +324,15 @@ o sea la carga de prueba q0 se desplaza en el campo generado por q.
     \item \textbf{Ley de Boyle:} A temperatura constante, la presión de un gas es inversamente proporcional a su volumen. O sea: $P = \frac{1}{V}$.
     \item \textbf{Ley de Charles:} A presión constante, el volumen de un gas es directamente proporcional a su temperatura absoluta. Matemáticamente: $\dfrac{V}{T} = \text{cte}$.
     \item Para una masa constante de gas ideal, el producto $nR$ es constante, por lo que la cantidad $\dfrac{pV}{T}$ también permanece constante. Si los subíndices $1$ y $2$ representan dos estados distintos del mismo gas, se cumple:
-    $\frac{p_1 V_1}{T_1} = \frac{p_2 V_2}{T_2} = \text{cte}$
+    $$\frac{p_1 V_1}{T_1} = \frac{p_2 V_2}{T_2} = \text{cte}$$
     \item Procesos: isotérmicos = T ctate , isobéricos = P ctate , isocóricos = V ctate, procesos adiabáticos = aislados térmicamente.
     \item \textbf{Número de Avogadro ($N_A$):} Representa la cantidad de moléculas en un mol: $N_A = 6.022 \times 10^{23} \, \text{mol}^{-1}$
     \item \textbf{Masa Molar ($M$):} Es la masa de un mol de sustancia, equivalente a la masa de una molécula ($m$) por el número de Avogadro: $M = N_A m $
     \item Convenciones: El calor es positivo cuando entra al sistema y negativo cuando sale del sistema. El trabajo es positivo cuando el sistema realiza trabajo sobre el entorno y negativo cuando el entorno realiza trabajo sobre el sistema.
     \item En un cambio finito de volumen desde $V_1$ hasta $V_2$, el trabajo realizado está dado por
-    $W = \int_{V_1}^{V_2} p\, dV$
-    \item \textbf{En un proceso isobárico:} El trabajo realizado por el gas se calcula como $W = \int_{V_1}^{V_2} p\, dV = p\,(V_2 - V_1)$
+    $$W = \int_{V_1}^{V_2} p\, dV$$
+    \item \textbf{En un proceso isobárico:} El trabajo realizado por el gas se calcula como 
+    $$W = \int_{V_1}^{V_2} p\, dV = p\,(V_2 - V_1)$$
     \item \textbf{Primera Ley de la Termodinámica:}
     $ \Delta U = Q - W $
     
