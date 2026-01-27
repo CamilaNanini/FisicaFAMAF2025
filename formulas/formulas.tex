@@ -22,25 +22,21 @@
 % \maketitle
 
 \section{Trigonometría y Vectores}
-
+\includegraphics[width=1\textwidth]{FISICA2.png}
 \begin{itemize}
-    \item \includegraphics[width=0.4\textwidth]{Trigonometria.png}
-    \includegraphics[width=0.3\textwidth]{procruz.png}
-    \item $180^\circ = \pi \text{ Rad}$ \textbf{Componentes de un Vector:}$A_x = A \cos \theta , A_y = A \sin \theta$
-
-    \item $|\vec{A}| = \sqrt{A_x^2 + A_y^2}$ , $\vec{A} \cdot \vec{B} = |\vec{A}||\vec{B}| \cos(\alpha)$
+    \item $180^\circ = \pi \text{ Rad}$ \textbf{Com Vector:}$A_x = A \cos \theta , A_y = A \sin \theta$,$|\vec{A}| = \sqrt{A_x^2 + A_y^2}$ , $\vec{A} \cdot \vec{B} = |\vec{A}||\vec{B}| \cos(\alpha)$
 \end{itemize}
 
 \section{Cinemática}
 
 \begin{itemize}
     \item \textbf{Distancia entre dos puntos:} $d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$
-    \item \textbf{Velocidad Media:} $v_{med} = \frac{x_f - x_i}{t_f - t_i} = \frac{\Delta x}{\Delta t}$
-    \item \textbf{Aceleración Promedio:} $a_{prom} = \frac{\Delta v_x}{\Delta t} = \frac{v_{xf} - v_{xi}}{t_f - t_i}$
-    \item \textbf{Movimiento Rectilíneo Uniforme (MRU):}
+    \item \textbf{Velocidad Media:} $v_{med} = (x_f - x_i)/(t_f - t_i) $
+    \item \textbf{Aceleración Promedio:} $a_{prom} = (v_{xf} - v_{xi})/(t_f - t_i)$
+    \item \textbf{Mov. Rectilíneo Uniforme (MRU):}
     $a = 0 \implies v = \text{constante} \implies x(t) = x_0 + v \cdot t$
-    \item \textbf{Movimiento Rectilíneo Uniformemente Variado (MRUV):}
-    $a = \text{constante} \implies v(t) = v_0 + a \cdot t \implies x(t) = x_0 + v_0 t + \frac{1}{2} a t^2$
+    \item \textbf{Mov. Rect. Uni. Variado (MRUV):}
+    $a = \text{cte} \implies v(t) = v_0 + a \cdot t \implies x(t) = x_0 + v_0 t + \frac{1}{2} a t^2$
     \item \textbf{Movimiento Circular:}
     \begin{itemize}
         \item Período ($T$): Tiempo por vuelta. $T = (2\pi R) / v$
@@ -87,24 +83,18 @@
         \item Energía Potencial Gravitatoria: $U_g = m \cdot g \cdot h$
         \item Energía Potencial Elástica: $U_e = (k \Delta x^2) / 2$
     \end{itemize}
-    \item \textbf{Energía Mecánica ($E$):} $E = K + U$
-    \begin{itemize}
-        \item Si solo hay fuerzas conservativas: $\Delta E = 0$
-        \item Con fuerzas no conservativas: $\Delta E = W_{NC}$
-    \end{itemize}
+    \item \textbf{E. Mecánica:} $E = K + U$. Solo conservativas: $\Delta E = 0$ y con no conservativas: $\Delta E = W_{NC}$
 \end{itemize}
 
 \section{Momento Lineal, Impulso y Choques}
 
 \begin{itemize}
-    \item \textbf{Momento Lineal o Cantidad de Movimiento Lineal:} $\vec{P} = m\vec{v}$.
-    \item \textbf{Nueva versión de la 2da Ley de Newton:} $\sum \vec{F} = ( d\vec{P}) / dt$.
     \item \textbf{Teorema Impulso-Cantidad de Movimiento:} $$\Delta \vec{P} = \int_{t_i}^{t_f} \vec{F} dt \equiv \vec{I}$$.
     \item Sistema aislado : se conserva P. El mismo antes y despues del choque.
     
     \item \textbf{Choque Inelástico (Plástico):}
     \begin{itemize}
-        \item Después del choque las partes quedan unidas en un solo cuerpo y $K_f < K_i$ (Ej:plastilina contra caja)
+        \item Dsp del choque las partes quedan unidas en un solo cuerpo y $K_f < K_i$ (Ej:plastilina vs caja)
         \item \textbf{Energía inicial del choque plástico:} $$K_i = \frac{1}{2} m_1 v_{1i}^2 + \frac{1}{2} m_2 v_{2i}^2$$.
         \item \textbf{Coeficiente de Restitución ($e$):} $e = \frac{v_{2f} - v_{1f}}{v_{1i} - v_{2i}}$, en general ($e < 1$) pero si es totalmente Inelástico ($e = 0$)
         \item \textbf{Velocidad final masa 1:} 
@@ -165,11 +155,8 @@
         \item \(\hat{r}\): vector unitario que apunta desde \(dq\) hacia el punto de observación.
         \item \(k_e = \dfrac{1}{4\pi\varepsilon_0}\).
         \item Antes de integrar, \(dq\) debe expresarse en función de la densidad de carga:
-        \begin{itemize}
-            \item Lineal: \(dq = \lambda\, dl\)
-            \item Superficial: \(dq = \sigma\, dA\)
-            \item Volumétrica: \(dq = \rho\, dV\)
-        \end{itemize}
+        Lineal: \(dq = \lambda\, dl\) , Superficial: \(dq = \sigma\, dA\) , Volumétrica: \(dq = \rho\, dV\)
+   
     \end{itemize}
 
     \item \textbf{Ley de Gauss:}
@@ -216,7 +203,7 @@
 
 \item \textbf{Carga puntual que se mueve en un campo eléctrico uniforme:}
 \[ W_{A\to B} = - \Delta U = q\int_A^B \vec E \cdot d\vec r = q_0Ed\]
-o sea que el caso de una carga puntual en el campo la energía potencial U = $q_0Ey$ donde y es la distancia vertical.
+es el caso de una carga puntual en el campo la energía potencial U = $q_0Ey$ donde y es la distancia vertical.Es el trabajo realizado por el campo eléctrico cuando una carga se mueve de A a B
 
 \item \textbf{Energía potencial eléctrica de dos cargas puntuales:}
 \[ U = k_e \frac{q q_0}{r} \]
@@ -301,18 +288,16 @@ o sea la carga de prueba q0 se desplaza en el campo generado por q.
     \item $\Phi_B = \int_S \vec B(\vec r,t)\cdot d\vec A$ con (S): una superficie cualquiera, ($d\vec A$): vector normal a la superficie, de módulo (dA) ($\vec B(\vec r,t)$) campo magnético, que depende del tiempo y posicion
     \item (\textit{FEM de mov.}) Cuando un conductor de longitud \(l\) se mueve con velocidad \(\vec{v}\) en un campo magnético \(\vec{B}\), la fuerza electromotriz inducida es:
     $\mathcal{E} = B\,l\,v$ (caso de mov. perpendicular al campo magnético).
-    \item La corriente inducida en un circuito de resistencia \(R\): $I = \frac{\mathcal{E}}{R}$
-    \item La potencia disipada/entregada por una resistencia \(R\) debido a la corriente inducida es:
-    $P = I^2 R = \frac{\mathcal{E}^2}{R}$
+    \item La corriente inducida en un circuito de resistencia \(R\): $I = \mathcal{E}/R$
+    \item Potencia disipada por una resistencia \(R\) debido a la corriente inducida:
+    $P = I^2 R = \mathcal{E}^2/R$
 \end{itemize}
 
 \section{Termodinámica}
 \begin{itemize}
     \item Dos objetos están en \textbf{contacto térmico} si pueden intercambiar energía
-    entre ellos. Dos objetos están en \textbf{equilibrio térmico} si están en contacto térmico y no hay
+    entre ellos. Y están en \textbf{equilibrio térmico} si están en contacto térmico y no hay
     intercambio neto de energía entre ellos.
-    \item \textbf{Ley cero de la termodinámica:} Si los objetos A y B están por separado en equilibrio térmico con un tercer objeto C,
-    entonces A y B están en equilibrio térmico uno con el otro.
     \item \textbf{Celsius a Fahrenheit:} $T(^\circ\text{F}) = \frac{9}{5} T(^\circ\text{C}) + 32$
     \item \textbf{Celsius a Kelvin:} $T(\text{K}) = T(^\circ\text{C}) + 273.15$
     \item \textbf{Expansión Lineal:} 
@@ -321,7 +306,7 @@ o sea la carga de prueba q0 se desplaza en el campo generado por q.
     \item \textbf{Expansión de Área:}  $ A = A_0(1 + 2\alpha \Delta T) \quad \text{o bien} \quad A = A_0 + 2\alpha A_0 \Delta T $
     \item \textbf{Cambio de Área:} $ \Delta A = A - A_0 = \gamma A_0 \Delta T $
     . Donde $\gamma = 2\alpha$ es el coeficiente de expansión de área.
-    \item \textbf{Expansión Volumétrica:} $ \Delta V = \beta V_0 \Delta T $. Donde $\beta$ es el coeficiente de expansión volumétrica y $\beta = 3\alpha$.
+    \item \textbf{Expansión Volumétrica:} $ \Delta V = \beta V_0 \Delta T $. Con $\beta$ coeficiente de expansión volumétrica y $\beta = 3\alpha$.
     \item \textbf{Calor requerido:} $ Q = mc \Delta T $. Donde $\Delta T = T_2 - T_1$ es el cambio de temperatura y $c$ es el calor específico.
     $ C = mc $ Representa la cantidad de calor necesaria para elevar un grado la temperatura de toda la masa del objeto. 
     A veces en vez de la masa se usa la cantidad de sustancia ($n$) y la masa de sus moles ($M$) en ese caso $ m = nM $
@@ -355,17 +340,16 @@ o sea la carga de prueba q0 se desplaza en el campo generado por q.
 \end{itemize}
 
 \section{Unidades}
-\begin{itemize}
-\item Velocidad: \(\mathrm{m/s}\)
-\item Aceleración: \(\mathrm{m/s^2}\)
-\item Newton: \(\mathrm{N} = 1\,\mathrm{kg}\cdot\mathrm{m/s^2}\)
-\item Joule: \(\mathrm{J} = 1\,\mathrm{N}\cdot\mathrm{m}\)
-\item Wats:\(\mathrm{W} = 1\,\mathrm{J/s}\)
-\item Volt: \(1\,\mathrm{V} = 1\,\mathrm{J/C}\)
-\item Faradio: \(1\,\mathrm{F} = 1\,\mathrm{C^2/(N\,m)}\)
-\item Ampere: \(1\,\mathrm{A} = 1\,\mathrm{C/s}\)
-\item Ohm: \(1\,\Omega = 1\,\mathrm{V/A}\)
-\item Tesla: 
+Velocidad: \(\mathrm{m/s}\)
+     Aceleración: \(\mathrm{m/s^2}\)
+     Newton: \(\mathrm{N} = 1\,\mathrm{kg}\cdot\mathrm{m/s^2}\)
+     Joule: \(\mathrm{J} = 1\,\mathrm{N}\cdot\mathrm{m}\)
+     Wats:\(\mathrm{W} = 1\,\mathrm{J/s}\)
+     Volt: \(1\,\mathrm{V} = 1\,\mathrm{J/C}\)
+     Faradio: \(1\,\mathrm{F} = 1\,\mathrm{C^2/(N\,m)}\)
+     Ampere: \(1\,\mathrm{A} = 1\,\mathrm{C/s}\)
+     Ohm: \(1\,\Omega = 1\,\mathrm{V/A}\)
+     Tesla: 
 \[
 1\,\mathrm{T} = \frac{\mathrm{V\,s}}{\mathrm{m^2}} 
 = \frac{\mathrm{J}}{\mathrm{A\,m^2}} 
@@ -373,7 +357,7 @@ o sea la carga de prueba q0 se desplaza en el campo generado por q.
 = \frac{\mathrm{kg}}{\mathrm{C\,s}} 
 = \frac{\mathrm{N}}{\mathrm{A\,m}}
 \]
-\end{itemize}
+
 
 
 \end{document}
