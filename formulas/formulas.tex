@@ -125,7 +125,7 @@
     \]
     (fuerza eléctrica ejercida por \(q_1\) sobre \(q_2\), donde \(\hat{r}_{12}\) es un vector unitario dirigido desde \(q_1\) hacia \(q_2\)).
     \begin{itemize}
-        \item \(k_e = \dfrac{1}{4\pi\varepsilon_0} \approx 8{,}99 \times 10^9 \, \text{N}\cdot\text{m}^2/\text{C}^2\) y \(\varepsilon_0 \approx 8{,}85 \times 10^{-12} \, \text{C}^2/(\text{N}\cdot\text{m}^2)\)
+        \item \(k_e = 1 / (4\pi\varepsilon_0) \approx 8{,}99 \times 10^9 \, \text{N}\cdot\text{m}^2/\text{C}^2\) y \(\varepsilon_0 \approx 8{,}85 \times 10^{-12} \, \text{C}^2/(\text{N}\cdot\text{m}^2)\)
     \end{itemize}
 
     \item \textbf{Principio de superposición de la fuerza electrostática:}
@@ -153,7 +153,6 @@
         \item \(dq\): elemento infinitesimal de carga.
         \item \(r\): distancia desde \(dq\) al punto donde se calcula \(\vec{E}\).
         \item \(\hat{r}\): vector unitario que apunta desde \(dq\) hacia el punto de observación.
-        \item \(k_e = \dfrac{1}{4\pi\varepsilon_0}\).
         \item Antes de integrar, \(dq\) debe expresarse en función de la densidad de carga:
         Lineal: \(dq = \lambda\, dl\) , Superficial: \(dq = \sigma\, dA\) , Volumétrica: \(dq = \rho\, dV\)
    
@@ -173,32 +172,28 @@
     \item \textbf{Caso: Esfera maciza uniformemente cargada (aislante)}
     \begin{itemize}
         \item Interior (\(r<R\)):
-        \[ Q_{\text{enc}} = Q\frac{r^3}{R^3}
-        , E(r)=\frac{1}{4\pi\varepsilon_0}\frac{Q}{R^3}r\]
+        $Q_{\text{enc}} = Q r^3/R^3
+        , E(r)= [Q / (4\pi\varepsilon_0 R^3)]r$
 
         \item Exterior (\(r\ge R\)):
-        \[E(r)=\frac{1}{4\pi\varepsilon_0}\frac{Q}{r^2}\]
+        $E(r)=Q / (4\pi\varepsilon_0 r^2)$
     \end{itemize}
 
     \item \textbf{Caso: Esfera conductora cargada}
 
     \begin{itemize}
-        \item Interior (\(r<R\)):
-        \[ Q_{\text{enc}}=0 \quad\Rightarrow\quad E=0\]
+        \item Interior (\(r<R\)): $Q_{\text{enc}}=0 \quad\Rightarrow\quad E=0$
 
         \item Exterior (\(r\ge R\)):
-        \[ E(4\pi r^2)=\frac{Q}{\varepsilon_0} \quad\Rightarrow\quad
-        E(r)=\frac{1}{4\pi\varepsilon_0}\frac{Q}{r^2}
-        \]
+        $E(4\pi r^2)=Q/\varepsilon_0 \quad\Rightarrow\quad
+        E(r)=Q / (4\pi\varepsilon_0 r^2)$
     \end{itemize}
 
     \item \textbf{Caso: Carga lineal infinita}
-    \[ Q_{\text{enc}}=\lambda L \]
-    \[ \quad E(r)=\frac{\lambda}{2\pi\varepsilon_0 r} \]
+     $Q_{\text{enc}}=\lambda L$ $\quad E(r)=\lambda/(2\pi\varepsilon_0 r)$
 
     \item \textbf{Caso: Lámina infinita cargada}
-    \[ Q_{\text{enc}}=\sigma A \]
-    \[ \quad E=\frac{\sigma}{2\varepsilon_0} \]
+    $Q_{\text{enc}}=\sigma A$ $\Rightarrow$ $\quad E=\sigma/(2\varepsilon_0)$ 
 \end{itemize}
 
 \item \textbf{Carga puntual que se mueve en un campo eléctrico uniforme:}
@@ -209,14 +204,15 @@ es el caso de una carga puntual en el campo la energía potencial U = $q_0Ey$ do
 \[ U = k_e \frac{q q_0}{r} \]
 o sea la carga de prueba q0 se desplaza en el campo generado por q.
 
-\item \textbf{Energía potencial eléctrica de un sistema de dos o más cargas puntuales:}
-\[U = k_e q_0 \sum_{i=1}^{n} \frac{q_i }{r_i}\]
-
 \item \textbf{Potencial electrico:} El potencial eléctrico indica cuánta energía por unidad de carga tendría una carga de prueba si estuviera en ese punto.
 \[V = \frac{U}{q_0} \rightarrow U = q_0 V\]
 
 \item \textbf{Potencial debido a una carga puntual:} $V = k_e \frac{q}{r}$
 
+\item Trabajo necesario para ensamblar un sist d cargas, trayéndolas desde el infi hasta sus posiciones:
+$W_{\text{ext}} = U$. Se introducen las cargas una a una: $$W = \sum_{i=1}^{N} q_i V_i$$ 
+donde el potencial en la posición de la carga $q_i$ es:
+$$V_i = \sum_{j<i} k \frac{q_j}{r_{ij}}$$ y $(r_{ij})$ es la distancia entre las cargas $q_i$ y $q_j$.
 \end{itemize}
 
 \section{Capacitancia y Corriente Eléctrica}
@@ -291,6 +287,23 @@ o sea la carga de prueba q0 se desplaza en el campo generado por q.
     \item La corriente inducida en un circuito de resistencia \(R\): $I = \mathcal{E}/R$
     \item Potencia disipada por una resistencia \(R\) debido a la corriente inducida:
     $P = I^2 R = \mathcal{E}^2/R$
+    \item \textbf{Cilindro macizo largo (radio $R$, corriente uniforme $I$):}
+    Por simetría $\vec B$ es tangencial y depende solo de $r$.
+    \[B(r)=
+    \begin{cases}
+        \mu_0 I r /(2\pi R^2), & r<R \\[4pt]
+        \mu_0 I /(2\pi r), & r>R
+    \end{cases}
+    \]
+    \item \textbf{Cilindro hueco largo (radios $a,b$, corriente uniforme $I$):}
+    Densidad $J=I/[\pi(b^2-a^2)]$.
+    \[ B(r)=
+    \begin{cases}
+        0, & r<a \\[4pt]
+        \mu_0 I /(2\pi r)\,(r^2-a^2)/(b^2-a^2), & a<r<b \\[4pt]
+        \mu_0 I /(2\pi r), & r>b
+    \end{cases}
+    \]
 \end{itemize}
 
 \section{Termodinámica}
@@ -335,7 +348,7 @@ o sea la carga de prueba q0 se desplaza en el campo generado por q.
     $$W = \int_{V_1}^{V_2} p\, dV = p\,(V_2 - V_1)$$
     \item \textbf{Primera Ley de la Termodinámica:}
     $ \Delta U = Q - W $
-    \item Trabajo isotérmico: $W = nRT \ln \left( \frac{V_f}{V_i} \right)$
+    \item Trabajo isotérmico: $W = nRT \ln \left( V_f/V_i \right)$
     
 \end{itemize}
 
